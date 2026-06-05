@@ -1,0 +1,75 @@
+recipes:
+  tnt_explosion:
+    hammer_1:
+      input:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:vein_mine":1}'
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:echo_shard
+        count: 1
+        schema_version: 1
+      
+      output:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:hammer":1}'
+        schema_version: 1
+    
+    hammer_2:
+      input:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:hammer":1}'
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:nether_star
+        count: 1
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:netherite_ingot
+        count: 1
+        schema_version: 1
+      output:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:hammer":2}'
+        schema_version: 1
+    hammer_3:
+      input:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:hammer":2}'
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:heavy_core
+        count: 1
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:dragon_breath
+        count: 1
+        schema_version: 1
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:netherite_ingot
+        count: 16
+        schema_version: 1
+      output:
+      - ==: org.bukkit.inventory.ItemStack
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{"hexenchants:hammer":3}'
+        schema_version: 1
+
+      

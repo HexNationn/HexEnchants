@@ -1,0 +1,23 @@
+{
+    "description": {
+        "text" : "",
+        "extra": [ 
+            {"text":"","extra":[{"text":"V","color":"#00D6FF"},{"text":"e","color":"#17B7FF"},{"text":"i","color":"#2D99FF"},{"text":"n","color":"#447AFF"},{"text":"M","color":"#5B5CFF"},{"text":"i","color":"#723DFF"},{"text":"n","color":"#881FFF"},{"text":"e","color":"#9F00FF"}]}
+        ]
+
+    },
+    "supported_items": "#hexenchants:allow_veinmine",
+    "anvil_cost": 1,
+    "min_level": 1,
+    "max_level": 1,
+    "weight": 7,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 17
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 0
+    },
+    "slots": ["any"]
+}

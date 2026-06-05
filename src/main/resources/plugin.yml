@@ -1,0 +1,10 @@
+name: HexEnchants
+version: '${version}'
+main: org.hexnation.hexenchants.HexEnchants
+
+api-version: '26.1.2'
+load: POSTWORLD
+
+commands:
+  test:
+    description: "hello"

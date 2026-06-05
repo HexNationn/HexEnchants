@@ -1,0 +1,32 @@
+{
+    "description": {
+        "text" : "",
+        "extra": [
+            {
+                "obfuscated": true,
+                "color": "#FF0000",
+                "text": "X"
+            },
+            {"text":"","extra":[{"text":"H","color":"#FF0000"},{"text":"a","color":"#DC0000"},{"text":"m","color":"#B90000"},{"text":"m","color":"#970000"},{"text":"e","color":"#740000"},{"text":"r","color":"#510000"}]},
+            {
+                "obfuscated": true,
+                "color": "#FF0000",
+                "text": "X"
+            }
+        ]
+    },
+    "supported_items": "#hexenchants:allow_hammer",
+    "anvil_cost": 1,
+    "min_level": 1,
+    "max_level": 3,
+    "weight": 1,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 60,
+        "per_level_above_first": 0
+    },
+    "slots": ["any"]
+}

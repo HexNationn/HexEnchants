@@ -1,0 +1,51 @@
+[16:28:17] [ServerMain/INFO]: [bootstrap] Running Java 25 (Java HotSpot(TM) 64-Bit Server VM 25.0.1+8-LTS-27; Oracle Corporation null) on Windows 11 10.0 (amd64)
+[16:28:17] [ServerMain/INFO]: [bootstrap] Loading Paper 26.1.2-66-main@34cf3ab (2026-05-26T15:01:52Z) for Minecraft 26.1.2
+[16:28:17] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:28:17] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[16:28:17] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - HexEnchantments (${version})
+[16:28:20] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:28:21] [ServerMain/INFO]: Loaded 1515 recipes
+[16:28:21] [ServerMain/INFO]: Loaded 1617 advancements
+[16:28:21] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:28:21] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 204.6ms
+[16:28:21] [Server thread/INFO]: Starting minecraft server version 26.1.2
+[16:28:21] [Server thread/INFO]: Loading properties
+[16:28:21] [Server thread/INFO]: This server is running Paper version 26.1.2-66-main@34cf3ab (2026-05-26T15:01:52Z) (Implementing API version 26.1.2.build.66-stable)
+[16:28:21] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:28:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:28:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:28:21] [Server thread/INFO]: [MoonriseCommon] Paper is using 7 worker threads, 1 I/O threads
+[16:28:21] [Server thread/INFO]: Default game type: SURVIVAL
+[16:28:21] [Server thread/INFO]: Generating keypair
+[16:28:21] [Server thread/INFO]: Starting Minecraft server on *:25566
+[16:28:21] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:28:21] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:28:21] [Server thread/INFO]: [HexEnchantments] Loading server plugin HexEnchantments v${version}
+[16:28:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:28:21] [Server thread/INFO]: Preparing level "world"
+[16:28:22] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[16:28:22] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:28:22] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[16:28:22] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:28:22] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[16:28:22] [Server thread/INFO]: Preparing spawn area: 100%
+[16:28:22] [Server thread/INFO]: Prepared spawn area in 2 ms
+[16:28:22] [Server thread/INFO]: Done preparing level "world" (0.271s)
+[16:28:22] [Server thread/INFO]: [HexEnchantments] Enabling HexEnchantments v${version}
+[16:28:22] [Server thread/INFO]: [spark] Starting background profiler...
+[16:28:22] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[16:28:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:28:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:28:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:28:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:28:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:28:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:28:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:28:22] [Server thread/INFO]: Running delayed init tasks
+[16:28:22] [Server thread/INFO]: Done (5.610s)! For help, type "help"
+[16:28:28] [User Authenticator #0/INFO]: UUID of player HexNation is ff3f57bc-3043-4380-ab7c-6d7ee94b4e54
+[16:28:29] [Server thread/INFO]: HexNation joined the game
+[16:28:29] [Server thread/INFO]: HexNation[/127.0.0.1:64229] logged in with entity id 64 at ([minecraft:overworld]-5.5, 95.0, 3.5)
+[16:28:31] [Server thread/INFO]: HexNation lost connection: Disconnected
+[16:28:31] [Server thread/INFO]: HexNation left the game

@@ -1,0 +1,9 @@
+vein_mine:
+  max_block_break: 128
+
+hammer:
+  sizes: 
+    - 3
+    - 5
+    - 7
+    
