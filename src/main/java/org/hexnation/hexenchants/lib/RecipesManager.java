@@ -15,7 +15,7 @@ import java.util.Set;
 import static org.bukkit.plugin.java.JavaPlugin.getPlugin;
 
 public class RecipesManager {
-    private static final File CUSTOM_RECIPES = new File(getPlugin(HexEnchants.class).getDataFolder(), "recipes.yml");
+    private static final File CUSTOM_RECIPES = new File(getPlugin(HexEnchants.class).getDataFolder(), "recipes/recipes.yml");
     private static YamlConfiguration RECIPES = YamlConfiguration.loadConfiguration(CUSTOM_RECIPES);
 
     public static YamlConfiguration getRecipesConfig() { return RECIPES; }

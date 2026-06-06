@@ -1,5 +1,5 @@
 vein_mine:
-  max_block_break: 128
+  max_block_break: 127
 
 hammer:
   sizes: 

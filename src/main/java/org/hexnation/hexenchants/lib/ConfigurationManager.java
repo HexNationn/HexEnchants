@@ -9,7 +9,7 @@ import java.io.IOException;
 import static org.bukkit.plugin.java.JavaPlugin.getPlugin;
 
 public class ConfigurationManager {
-    private static final File ENCHANTMENTS_CONFIG           = new File(getPlugin(HexEnchants.class).getDataFolder(), "enchantments.yml");
+    private static final File ENCHANTMENTS_CONFIG           = new File(getPlugin(HexEnchants.class).getDataFolder(), "enchantments/enchantments.yml");
     private static final YamlConfiguration ENCHANTMENTS     = YamlConfiguration.loadConfiguration(ENCHANTMENTS_CONFIG);
 
 

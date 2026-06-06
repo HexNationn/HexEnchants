@@ -4,6 +4,7 @@ import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+import org.hexnation.hexenchants.HexEnchants;
 import org.hexnation.hexenchants.blocks.NeighboringBlocks;
 import org.hexnation.hexenchants.lib.ConfigurationManager;
 
@@ -13,10 +14,12 @@ import java.util.ArrayList;
 public class VeinMine {
     public static void triggerVeinMine(Player player, Block broken_block, ItemStack tool) {
         int max_veinmine_blocks = ConfigurationManager.getEnchantmentsConfig().getInt("vein_mine.max_block_break");
-        Tag<Material> mineable_ores_tag = Bukkit.getTag("items", new NamespacedKey("hexnationenchantments", "mineable_ores"), Material.class);
+        Tag<Material> vein_mineable_tag = Bukkit.getTag("items", new NamespacedKey(HexEnchants.getPlugin(HexEnchants.class).namespace(), "vein_mineable"), Material.class);
 
         // DETERMINE IF TOOL IS AXE
         if (Tag.ITEMS_AXES.isTagged(tool.getType())) {
+            if (!Tag.LOGS.isTagged(broken_block.getType())) { return; }
+
             ArrayList<Block> detected_blocks = new ArrayList<>(NeighboringBlocks.startDetectingBlocks(broken_block, Tag.LOGS, max_veinmine_blocks));
             ItemStack player_tool = player.getInventory().getItemInMainHand();
 
@@ -36,7 +39,9 @@ public class VeinMine {
         }
 
         if (Tag.ITEMS_PICKAXES.isTagged(tool.getType())) {
-            ArrayList<Block> detected_blocks = new ArrayList<>(NeighboringBlocks.startDetectingBlocks(broken_block, mineable_ores_tag, max_veinmine_blocks));
+            if (!vein_mineable_tag.isTagged(broken_block.getType())) { return; }
+
+            ArrayList<Block> detected_blocks = new ArrayList<>(NeighboringBlocks.startDetectingBlocks(broken_block, vein_mineable_tag, max_veinmine_blocks));
             ItemStack player_tool = player.getInventory().getItemInMainHand();
 
             for (Block detected_block : detected_blocks) {

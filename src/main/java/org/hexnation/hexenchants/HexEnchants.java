@@ -6,20 +6,15 @@ import org.hexnation.hexenchants.event.BlockBreak;
 import org.hexnation.hexenchants.event.TntUpgradeProcess;
 
 public final class HexEnchants extends JavaPlugin implements Listener {
-//    @EventHandler
-//    public void itemInteract(PlayerInteractEvent event) {
-//        Player player = event.getPlayer();
-//        if (event.getHand() == EquipmentSlot.HAND) {
-//            if (player.getInventory().getItemInMainHand().equals(ItemStack.of(Material.STICK))) {
-////                PersistentDataContainer chunk = player.getChunk().getPersistentDataContainer();
-//
-//
-//            }
-//        }
-//    }
-
     @Override
     public void onEnable() {
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdir();
+
+            saveResource("enchantments/enchantments.yml", true);
+            saveResource("recipes/recipes.yml", true);
+        }
+
         getServer().getPluginManager().registerEvents(this, this);
         getServer().getPluginManager().registerEvents(new BlockBreak(), this);
         getServer().getPluginManager().registerEvents(new TntUpgradeProcess(), this);
