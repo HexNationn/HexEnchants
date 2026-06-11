@@ -1,0 +1,11 @@
+{
+  "values" : [
+    "#minecraft:leaves",
+    "#minecraft:wool",
+    "#minecraft:wool_carpets",
+    "minecraft:vine",
+    "minecraft:short_grass",
+    "minecraft:short_dry_grass",
+    "minecraft:tall_dry_grass"
+  ]
+}

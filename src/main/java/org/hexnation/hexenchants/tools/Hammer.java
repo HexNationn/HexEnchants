@@ -127,7 +127,7 @@ public class Hammer {
             }
         } else {
             for (Block block: detected_blocks) {
-                block.breakNaturally();
+                block.breakNaturally(tool);
                 player.damageItemStack(tool, 1);
             }
         }

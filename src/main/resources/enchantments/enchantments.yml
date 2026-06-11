@@ -1,9 +1,10 @@
 vein_mine:
-  max_block_break: 127
+  max_block_breaks: 127
+  max_harvests: 79
+  max_strips: 63
 
 hammer:
-  sizes: 
+  sizes:
     - 3
     - 5
     - 7
-    

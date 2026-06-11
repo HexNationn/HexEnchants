@@ -1,0 +1,34 @@
+"minecraft:pickaxes":
+  tags:
+    - "minecraft:coal_ores"
+    - "minecraft:copper_ores"
+    - "minecraft:diamond_ores"
+    - "minecraft:emerald_ores"
+    - "minecraft:gold_ores"
+    - "minecraft:iron_ores"
+    - "minecraft:lapis_ores"
+    - "minecraft:redstone_ores"
+  materials:
+
+"minecraft:axes":
+  tags:
+    - "minecraft:logs"
+    - "minecraft:planks"
+  materials:
+
+"minecraft:hoes":
+  tags:
+    - "hexenchants:sculk_materials"
+  materials:
+
+
+"minecraft:shovels":
+  tags:
+    - "minecraft:mineable/shovel"
+  materials:
+
+
+"hexenchants:shears":
+  tags:
+    - "hexenchants:allow_shearables"
+  materials:

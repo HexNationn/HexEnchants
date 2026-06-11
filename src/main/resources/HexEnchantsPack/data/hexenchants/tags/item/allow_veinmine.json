@@ -3,6 +3,7 @@
         "#minecraft:shovels",
         "#minecraft:pickaxes",
         "#minecraft:axes",
-        "#minecraft:hoes"
+        "#minecraft:hoes",
+        "minecraft:shears"
     ]
 }
