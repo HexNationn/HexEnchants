@@ -38,7 +38,7 @@ public class VeinHammerInteractions implements Listener {
         if (!tool.getEnchantments().isEmpty())
         {
             if (tool.getEnchantments().containsKey(Enchantments.VEINMINE.get())) {
-                Boolean vein_mining_status = player.getPersistentDataContainer().getOrDefault(NamespacedKey.fromString("hexenchants:vein_toggle"), PersistentDataType.BOOLEAN, null);
+                Boolean vein_mining_status = player.getPersistentDataContainer().getOrDefault(NamespacedKey.fromString("hexenchants:vein_toggle"), PersistentDataType.BOOLEAN, true);
 
                 if (vein_mining_status) {
                     triggerVeinMine(player, broken_block, tool);
