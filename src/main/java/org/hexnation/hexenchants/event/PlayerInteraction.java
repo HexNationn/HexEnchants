@@ -82,7 +82,5 @@ public class PlayerInteraction implements Listener {
         } else {
             player.sendActionBar(mm.deserialize("<gradient:#00d6ff:#9f00ff>VeinMine</gradient> Status: <red>OFF</red>"));
         }
-
-
     }
 }

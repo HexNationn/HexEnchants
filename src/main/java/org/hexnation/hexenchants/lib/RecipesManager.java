@@ -30,9 +30,6 @@ public class RecipesManager {
     public static Map<String, List<?>> getHammerRecipes() {
         RECIPES = YamlConfiguration.loadConfiguration(CUSTOM_RECIPES);
 
-//        List<?> inputs = getRecipesConfig().getList("recipes.tnt_explosion");
-//        List<?> output = getRecipesConfig().getList("recipes.tnt_explosion.hammer_3.output");
-
         Map<String, List<?>> recipes = new HashMap<>();
 
         Set<String> recipe_keys = getRecipeKeys();
@@ -50,13 +47,5 @@ public class RecipesManager {
         ItemStack item = (ItemStack) reward.getFirst();
 
         return item;
-    }
-
-    public static void saveCustomRecipes() {
-        try {
-            RECIPES.save(CUSTOM_RECIPES);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
     }
 }

@@ -70,12 +70,6 @@ public class Hammer {
             for (int z = -number_of_detections; z < hammer_size - number_of_detections; z++) {
                 for (int x = -number_of_detections; x < hammer_size - number_of_detections; x++) {
                     Block current_block = broken_block.getRelative(x, 0, z);
-
-//                    Tag<Material> tool_type_preferred = getToolType(current_block);
-//
-//                    if (tool_type_preferred.isTagged(tool_used.getType())) {
-//                        temp_list.add(current_block);
-//                    }
                     addBlockToList(temp_list, tool_used, current_block);
                 }
             }

@@ -133,7 +133,6 @@ public class VeinHammerInteractions implements Listener {
     public void onShear(PlayerShearEntityEvent event) {
         Player player = event.getPlayer();
         ItemStack tool = event.getItem();
-        World current_world = player.getWorld();
         Entity sheared = event.getEntity();
 
         PersistentDataContainer pdc = player.getPersistentDataContainer();

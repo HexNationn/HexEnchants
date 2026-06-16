@@ -49,10 +49,6 @@ public class VeinMine {
         List<String> block_tags_allowed = ConfigurationManager.veinmine_tool_tags(tool_type.getKey().asString());
         List<String> block_materials_allowed = ConfigurationManager.veinmine_material_tags(tool_type.getKey().asString());
 
-
-        Tag<Material> tag_to_detect = null;
-        Material material_to_detect = null;
-
         Block block_to_break = null;
 
         for (String tag_name : block_tags_allowed) {
