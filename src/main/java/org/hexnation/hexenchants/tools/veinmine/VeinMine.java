@@ -3,12 +3,14 @@ package org.hexnation.hexenchants.tools.veinmine;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Orientable;
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.hexnation.hexenchants.blocks.BlockDetection;
 import org.hexnation.hexenchants.lib.ConfigurationManager;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -38,7 +40,8 @@ public class VeinMine {
 
     public static void triggerVeinMine(Player player, Block broken_block, ItemStack tool) {
         int max_veinmine_blocks = ConfigurationManager.getEnchantmentsConfig().getInt("vein_mine.max_block_breaks");
-//        Tag<Material> vein_mineable_tag = Bukkit.getTag("items", new NamespacedKey(HexEnchants.getPlugin(HexEnchants.class).namespace(), "vein_mineable"), Material.class);
+
+        World world = player.getWorld();
 
         // get tool type
         Tag<Material> tool_type = detect_tool_type(tool);
@@ -60,7 +63,6 @@ public class VeinMine {
             }
 
             if (current_tag.isTagged(broken_block.getType())) {
-//                tag_to_detect = current_tag;
                 block_to_break = broken_block;
                 break;
             }
@@ -89,7 +91,15 @@ public class VeinMine {
                 break;
             }
 
-            detected_block.breakNaturally(tool);
+            Collection<ItemStack> drops = detected_block.getDrops(tool, player);
+
+            for (ItemStack drop : drops) {
+                world.spawn(player.getLocation(), Item.class, dropped_item -> {
+                   dropped_item.setItemStack(drop);
+                });
+            }
+
+            detected_block.setType(Material.AIR);
             tool.damage(1, player);
         }
     }
